@@ -1,0 +1,23 @@
+.block {
+    margin-top: 200px;
+}
+
+.marg-l-10 {
+    margin-left:  10px;
+}
+
+.marg-l-20 {
+    margin-left:  20px;
+}
+
+.post {
+    margin: 30px auto 30px auto;
+}
+
+.post-img {
+    padding: 30px;
+}
+
+.cat {
+    margin: 0 auto 0 auto;
+}
