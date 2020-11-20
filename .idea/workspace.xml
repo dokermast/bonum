@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c0f4fd5-23fc-49d1-aea0-f4e46847f6b9" name="Default Changelist" comment="" />
+    <list default="true" id="1c0f4fd5-23fc-49d1-aea0-f4e46847f6b9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/PostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Main/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Main/PostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/main/includes/posts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/main/includes/posts.blade.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -154,7 +159,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../bon" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -219,10 +224,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="691" y="237" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1605028350496" />
-    <state x="848" y="286" key="FileChooserDialogImpl" timestamp="1605880098525">
+    <state x="848" y="286" key="FileChooserDialogImpl" timestamp="1605886381319">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="848" y="286" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1605880098525" />
+    <state x="848" y="286" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1605886381319" />
     <state x="2523" y="200" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1366.728@1920.0.1366.728" timestamp="1605769881355" />
     <state x="506" y="423" key="NewPhpFileDialog" timestamp="1604689499819">
       <screen x="0" y="0" width="1920" height="1040" />

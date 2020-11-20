@@ -46,7 +46,7 @@ class PostController extends Controller
         $post->img = $path;
 
         if (!$post->save()) {
-            unlink('storage/' . $path);
+            unlink('storage/public/' . $path);
             return redirect('/posts')->withErrors('Post wasn\'t created');
         }
         return redirect('/')->with('status', 'Post was created');

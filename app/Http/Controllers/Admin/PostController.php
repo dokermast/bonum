@@ -44,7 +44,7 @@ class PostController extends Controller
         $post->img = $path;
 
         if (!$post->save()) {
-            unlink('storage/' . $path);
+            unlink('storage/public/' . $path);
             return redirect('/admin/posts')->withErrors('Post wasn\'t created');
         }
 
@@ -78,8 +78,8 @@ class PostController extends Controller
         $input = $request->except("_token");
 
         if(isset($input['image'])){
-            if($post->img && file_exists('storage/'.$post->img)){
-                unlink('storage/'.$post->img);
+            if($post->img && file_exists('storage/public/'.$post->img)){
+                unlink('storage/public/'.$post->img);
             }
             $path = $request->file('image')->store('uploads', 'public');
             $post->filename = $input['image']->getClientOriginalName();
@@ -87,7 +87,7 @@ class PostController extends Controller
         }
         $post->fill($input);
         if (!$post->save()) {
-            unlink('storage/' . $path);
+            unlink('storage/public/' . $path);
             return redirect('/admin/posts')->withErrors('Post wasn\'t updated');
         }
 
@@ -98,7 +98,7 @@ class PostController extends Controller
     public function destroy($id)
     {
         $post = Post::find($id);
-        $path = 'storage/'.$post->img;
+        $path = 'storage/public/'.$post->img;
 
         if($post){
 

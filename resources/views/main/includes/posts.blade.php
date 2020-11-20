@@ -5,7 +5,7 @@
             <div class="row no-gutters">
                 <div class="col-md-2">
                     @if($item->img)
-                        <img src="{{asset('/storage/'.$item->img)}}" class="card-img" alt="">
+                        <img src="{{asset('/storage/public/'.$item->img)}}" class="card-img" alt="">
                     @else
                         <img src="/public/img/default.jpeg" class="card-img" alt="">
                     @endif
