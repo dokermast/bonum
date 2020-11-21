@@ -1,61 +1,117 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+Создать электронный журнал для написания постов на разную тематику. 
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+В электроном журнале есть ряд категорий где пользователей могут создавать посты. 
 
-## About Laravel
+Пост наполняется заголовком, изображениям и основным контентов (изображения и текст). 
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+В административной панели можно создавать категории, создавать и 
+публиковать посты, удалять и создавать пользователей. 
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Пользователи 
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+1. Гость 
+2. Зарегистрированный пользователь 
+3. Администратор 
 
-## Learning Laravel
+Гость может только просматривать посты. 
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Зарегистрированный пользователь создает посты по существующих категориях и удаляет свои статьи.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+ Администратор руководить публикацией постов и создает и 
+удаляет категории также руководит пользователи. 
 
-## Laravel Sponsors
+Регистрация 
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+При регистрации пользователя он должен указать такие данные: 
+1. Логин 
+2. Адрес электронной почты 
+3. Пароль 
+4. Имя и фамилия 
+5. Дата рождения 
 
-### Premium Partners
+Личный кабинет 
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[OP.GG](https://op.gg)**
+Личный кабинет существует только для зарегистрированных пользователей. 
+Для просмотра своих посто, редактирования та их удаления. 
+Также есть возможность изменить свой пароль. 
 
-## Contributing
+Посты(Статьи) 
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Статьи обязательно имеют такую структуру: 
 
-## Code of Conduct
+1. Названия 
+2. Изображения 
+3. Описания
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+При создании поста пользователи указывают все структурные данные, 
+slug генерируеться автоматически. 
+Если пост был изменен статус публикации переключает на неопубликованный. 
+Если пользователь удаляет пост то данные о посте не удаляются а ставиться статус удалено. 
 
-## Security Vulnerabilities
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+Административная панель 
+
+Модуль категорий 
+
+В данном модуле должно быть организовано: просмотр списка категорий , редактирования и удаления. 
+При создания категории должна быть возможности: указать названи, slug, 
+выбрать вложенность категории, позицию, статус. 
+Если статус категория выключен посты с этой категорией не должны показываться. 
+
+Модуль постов 
+
+Администратор должен иметь возможность: 
+
+1. Просматривать список постов 
+2. Удалять посты 
+3. Изменять статус (Не опубликован / Опубликован) 
+4. Редактировать пост 
+
+Модуль пользователей 
+
+Модуль пользователей нужен для просмотра существующих пользователей, 
+создания нового пользователя. 
+
+Техническая реализация (рекомендации) 
+
+В качестве фреймворка можно использовать Laravel (последней версии), 
+база данных mariadb, также написаны seed для первого пользователя администратора 
+(email:admin@test.com, password: admin1234)
+
+==================
+
+seed  create 
+
+Users:
+admin    admin@test.com   admin1234
+user       user@test.com       user1234
+user2     user2@test.com     user1234
+user 3    user3@test.com     user1234
+
+Categories & Posts
+
+=========================
+
+
+git clone https://github.com/dokermast/bonum_test.git
+
+composer install
+
+create && config .env
+
+php artisan key:generate
+
+create DB
+
+php artisan migrate
+
+php artisan db:seed
+
+php artisan storage:link
+
+
+all Ok!
