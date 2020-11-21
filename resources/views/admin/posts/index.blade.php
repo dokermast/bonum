@@ -72,5 +72,5 @@
 @endsection
 
 @section('script')
-    @include('admin.includes.script')
+    @include('admin.includes.posts_script')
 @endsection

@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Log;
 
 
 class CategoryController extends Controller
@@ -85,5 +86,20 @@ class CategoryController extends Controller
         } else {
             return redirect('/admin/categories')->withErrors('The Category wasn\'t deleted');
         }
+    }
+
+
+    public function categoryStatus(Request $request)
+    {
+        $category = Category::find($request->id);
+
+        Category::find($request->id)->update(['status' => $request->status]);
+        $ids = null;
+        if(count($category->child) > 0){
+            Category::where('parent_id', $request->id)->update(['status' => $request->status]);
+            $ids = Category::where('parent_id', $request->id)->pluck('id')->toArray();
+        }
+
+        return response()->json(['ids' => $ids]);
     }
 }

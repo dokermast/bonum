@@ -64,6 +64,7 @@ Route::group(['middleware' => ['auth', 'admin']], function(){
             Route::get('/edit/{category}', [CategoryController::class, 'edit'])->name('category.edit');
             Route::post('/update/{category}', [CategoryController::class, 'update'])->name('category.update');
             Route::post('/destroy/{category}', [CategoryController::class, 'destroy'])->name('category.destroy');
+            Route::post('/status', [CategoryController::class, 'categoryStatus']);
         });
 
         Route::group(['prefix' => 'users'], function () {

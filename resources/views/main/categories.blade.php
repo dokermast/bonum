@@ -20,7 +20,9 @@
                             <li><a class="" href="{{route('category.posts', $item)}}">{{$item->name}}</a></li>
                             <ul>
                                 @foreach($item->child as $el)
-                                    <li><a class="" href="{{route('category.posts', $el)}}">{{$el->name}}</a></li>
+                                    @if($el->status == 1)
+                                        <li><a class="" href="{{route('category.posts', $el)}}">{{$el->name}}</a></li>
+                                    @endif
                                 @endforeach
                             </ul>
                         @endif

@@ -2,10 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c0f4fd5-23fc-49d1-aea0-f4e46847f6b9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/includes/categories_script.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/PostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Main/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Main/PostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/main/includes/posts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/main/includes/posts.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Main/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Main/MainController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/categories/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/categories/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/includes/script.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/includes/posts_script.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/posts/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/posts/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/main/categories.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/main/categories.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,21 +165,21 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../bon" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../anor" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\servers\OSP_5_7\domains\bonum\app\Http\Controllers\Main" />
-      <recent name="D:\servers\OSP_5_7\domains\bonum\app\Http\Controllers\Admin" />
-      <recent name="D:\servers\OSP_5_7\domains\bonum\app\Http\Controllers" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\servers\OSP_5_7\domains\bonum\resources\views\admin" />
       <recent name="D:\servers\OSP_5_7\domains\bonum\public\img" />
       <recent name="D:\servers\OSP_5_7\domains\bonum\resources\views\main\posts" />
       <recent name="D:\servers\OSP_5_7\domains\bonum" />
       <recent name="D:\servers\OSP_5_7\domains\bonum\app" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\servers\OSP_5_7\domains\bonum\app\Http\Controllers\Main" />
+      <recent name="D:\servers\OSP_5_7\domains\bonum\app\Http\Controllers\Admin" />
+      <recent name="D:\servers\OSP_5_7\domains\bonum\app\Http\Controllers" />
     </key>
   </component>
   <component name="RunManager">
@@ -209,6 +215,7 @@
       <workItem from="1605799519013" duration="28000" />
       <workItem from="1605803450625" duration="21687000" />
       <workItem from="1605880109744" duration="1612000" />
+      <workItem from="1605950739357" duration="9338000" />
     </task>
     <servers />
   </component>
@@ -220,14 +227,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="548" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1604691771549" />
-    <state x="691" y="237" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605028350496">
+    <state x="691" y="237" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605950892565">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="691" y="237" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1605028350496" />
-    <state x="848" y="286" key="FileChooserDialogImpl" timestamp="1605886381319">
+    <state x="691" y="237" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1605950892565" />
+    <state x="848" y="286" key="FileChooserDialogImpl" timestamp="1605954564315">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="848" y="286" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1605886381319" />
+    <state x="848" y="286" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1605954564315" />
     <state x="2523" y="200" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1366.728@1920.0.1366.728" timestamp="1605769881355" />
     <state x="506" y="423" key="NewPhpFileDialog" timestamp="1604689499819">
       <screen x="0" y="0" width="1920" height="1040" />

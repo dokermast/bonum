@@ -38,7 +38,15 @@
                                         @endif
                                         <td>{{ $item->name }}</td>
                                         <td>{{ $item->slug }}</td>
-                                        <td>{{ $item->status }}</td>
+                                        <td>
+                                            @if($item->status == 0)
+                                                <a id="off_{{$item->id}}" style="" class="btn btn-secondary btn-sm" onclick="categoryStatus({{$item->id}}, 1)">Off</a>
+                                                <a id="on_{{$item->id}}" style="display: none" class="btn btn-success btn-sm" onclick="categoryStatus({{$item->id}}, 0)">On</a>
+                                            @else
+                                                <a id="on_{{$item->id}}" style="" class="btn btn-success btn-sm" onclick="categoryStatus({{$item->id}}, 0)">On</a>
+                                                <a id="off_{{$item->id}}" style="display: none" class="btn btn-secondary btn-sm" onclick="categoryStatus({{$item->id}}, 1)">Off</a>
+                                            @endif
+                                        </td>
                                         <td><a class="btn btn-outline-warning" href="{{ route('category.edit', $item) }}">Edit</a></td>
                                         <td>
                                             <form action="{{ route('category.destroy', $item->id) }}" method="POST">
@@ -59,4 +67,8 @@
             </div>
         </div>
     </div>
+@endsection
+
+@section('script')
+    @include('admin.includes.categories_script')
 @endsection

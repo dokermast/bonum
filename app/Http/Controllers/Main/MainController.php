@@ -12,8 +12,14 @@ class MainController extends Controller
 {
     public function index()
     {
-        $categories = Category::all();
-        $posts = Post::where('status', 1)->where('removed', 0)->paginate(5);
+        $categories = Category::where('status', 1)->get();
+
+        $posts = Post::whereHas('category', function ($query){
+            $query->where('status', 1);
+        })
+            ->where('status', 1)
+            ->where('removed', 0)
+            ->paginate(5);
 
         return view('main.main', ['posts' => $posts, 'categories' => $categories]);
     }
@@ -21,7 +27,7 @@ class MainController extends Controller
 
     public function categories()
     {
-        $categories = Category::all();
+        $categories = Category::where('status', 1)->get();
 
         return view('main.categories', ['categories' => $categories]);
     }
