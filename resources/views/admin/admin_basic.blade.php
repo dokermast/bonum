@@ -7,29 +7,29 @@
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="/public/adminlte/plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="{{asset('/adminlte/plugins/fontawesome-free/css/all.min.css')}}">
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <!-- Tempusdominus Bbootstrap 4 -->
-    <link rel="stylesheet" href="/public/adminlte/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+    <link rel="stylesheet" href="{{asset('/adminlte/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css')}}">
     <!-- iCheck -->
-    <link rel="stylesheet" href="/public/adminlte/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <link rel="stylesheet" href="{{asset('/adminlte/plugins/icheck-bootstrap/icheck-bootstrap.min.css')}}">
     <!-- JQVMap -->
-    <link rel="stylesheet" href="/public/adminlte/plugins/jqvmap/jqvmap.min.css">
+    <link rel="stylesheet" href="{{asset('/adminlte/plugins/jqvmap/jqvmap.min.css')}}">
     <!-- Theme style -->
-    <link rel="stylesheet" href="/public/adminlte/dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="{{asset('/adminlte/dist/css/adminlte.min.css')}}">
     <!-- overlayScrollbars -->
-    <link rel="stylesheet" href="/public/adminlte/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+    <link rel="stylesheet" href="{{asset('/adminlte/plugins/overlayScrollbars/css/OverlayScrollbars.min.css')}}">
     <!-- Daterange picker -->
-    <link rel="stylesheet" href="/public/adminlte/plugins/daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" href="{{asset('/adminlte/plugins/daterangepicker/daterangepicker.css')}}">
     <!-- summernote -->
-    <link rel="stylesheet" href="/public/adminlte/plugins/summernote/summernote-bs4.css">
+    <link rel="stylesheet" href="{{asset('/adminlte/plugins/summernote/summernote-bs4.css')}}">
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
     <!-- daterange picker -->
-    <link rel="stylesheet" href="/public/adminlte/plugins/daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" href="{{asset('/adminlte/plugins/daterangepicker/daterangepicker.css')}}">
     <!-- custom css -->
-    <link rel="stylesheet" href="/public/css/custom.css">
+    <link rel="stylesheet" href="{{asset('/css/custom.css')}}">
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 
@@ -76,7 +76,7 @@
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
         <!-- Brand Logo -->
         <a href="{{ route('admin') }}" class="brand-link">
-            <img src="{{ env('SUB') }}/public/img/admin.jpg" alt="AdminLogo" class="brand-image img-circle elevation-3"
+            <img src="{{asset('/img/admin.jpg')}}" alt="AdminLogo" class="brand-image img-circle elevation-3"
                  style="opacity: .8">
             <span class="brand-text font-weight-light">Admin</span>
         </a>
@@ -183,17 +183,17 @@
 @yield('script')
 
 <!-- jQuery -->
-<script src="/public/adminlte/plugins/jquery/jquery.min.js"></script>
+<script src="{{asset('/adminlte/plugins/jquery/jquery.min.js')}}"></script>
 <!-- jQuery UI 1.11.4 -->
-<script src="/public/adminlte/plugins/jquery-ui/jquery-ui.min.js"></script>
+<script src="{{asset('/adminlte/plugins/jquery-ui/jquery-ui.min.js')}}"></script>
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
 <script>
     $.widget.bridge('uibutton', $.ui.button)
 </script>
 <!-- Select2 -->
-<script src="/public/adminlte/plugins/select2/js/select2.full.min.js"></script>
+<script src="{{asset('/adminlte/plugins/select2/js/select2.full.min.js')}}"></script>
 <!-- Bootstrap 4 -->
-<script src="/public/adminlte/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="{{asset('/adminlte/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 
 
 </body>

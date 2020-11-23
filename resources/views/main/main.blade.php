@@ -14,6 +14,7 @@
         <div class="container">
 
             @if(count($posts) > 0 )
+
                 @foreach($posts as $item)
 
                     @include('main.includes.posts')

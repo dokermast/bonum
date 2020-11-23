@@ -7,7 +7,7 @@
                     @if($item->img)
                         <img src="{{asset('/storage/public/'.$item->img)}}" class="card-img" alt="">
                     @else
-                        <img src="/public/img/default.jpeg" class="card-img" alt="">
+                        <img src="{{asset('/img/default.jpeg')}}" class="card-img" alt="">
                     @endif
                 </div>
                 <div class="col-md-10">

@@ -13,7 +13,7 @@
     <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
 
     <!--  CUSTOM CSS -->
-    <link href="{{ '/public/css/custom.css' }}" rel="stylesheet" type="text/css" >
+    <link href="{{asset('/css/custom.css')}}" rel="stylesheet" type="text/css" >
 
     <title>Bonum</title>
 </head>
@@ -61,7 +61,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.1/bootstrap3-typeahead.min.js"></script>
 
 <!-- CUSTOM JS -->
-<script type="text/javascript" src="{{ '/public/js/custom.js' }}"></script>
+<script type="text/javascript" src="{{ asset('/js/custom.js') }}"></script>
 
 </body>
 </html>
