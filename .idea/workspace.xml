@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c0f4fd5-23fc-49d1-aea0-f4e46847f6b9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/includes/categories_script.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Main/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Main/MainController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/categories/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/categories/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/includes/script.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/includes/posts_script.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/PostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/includes/categories_script.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/includes/categories_script.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/includes/posts_script.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/includes/posts_script.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/posts/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/posts/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/main/categories.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/main/categories.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -165,21 +161,22 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../anor" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\servers\OSP_5_7\domains\bonum" />
+      <recent name="D:\servers\OSP_5_7\domains\bonum\app\Http\Controllers\Main" />
+      <recent name="D:\servers\OSP_5_7\domains\bonum\app\Http\Controllers\Admin" />
+      <recent name="D:\servers\OSP_5_7\domains\bonum\app\Http\Controllers" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\servers\OSP_5_7\domains\bonum\resources\views\admin" />
       <recent name="D:\servers\OSP_5_7\domains\bonum\public\img" />
       <recent name="D:\servers\OSP_5_7\domains\bonum\resources\views\main\posts" />
       <recent name="D:\servers\OSP_5_7\domains\bonum" />
       <recent name="D:\servers\OSP_5_7\domains\bonum\app" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\servers\OSP_5_7\domains\bonum\app\Http\Controllers\Main" />
-      <recent name="D:\servers\OSP_5_7\domains\bonum\app\Http\Controllers\Admin" />
-      <recent name="D:\servers\OSP_5_7\domains\bonum\app\Http\Controllers" />
     </key>
   </component>
   <component name="RunManager">
@@ -216,6 +213,7 @@
       <workItem from="1605803450625" duration="21687000" />
       <workItem from="1605880109744" duration="1612000" />
       <workItem from="1605950739357" duration="9338000" />
+      <workItem from="1606207322168" duration="1751000" />
     </task>
     <servers />
   </component>
@@ -244,14 +242,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="103" y="124" width="1644" height="738" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1604348670090" />
-    <state x="2308" y="0" width="994" height="814" key="dock-window-1" timestamp="1605166816179">
-      <screen x="1920" y="0" width="1366" height="728" />
-    </state>
-    <state x="2308" y="0" width="994" height="814" key="dock-window-1/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1605166816179" />
-    <state x="963" y="333" width="1276" height="752" key="dock-window-2" timestamp="1605170077885">
+    <state x="988" y="34" width="812" height="874" key="dock-window-1" timestamp="1606209102855">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="963" y="333" width="1276" height="752" key="dock-window-2/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1605170077885" />
+    <state x="988" y="34" width="812" height="874" key="dock-window-1/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1606209102855" />
+    <state x="1956" y="10" width="1310" height="874" key="dock-window-2" timestamp="1606209102855">
+      <screen x="1920" y="0" width="1366" height="728" />
+    </state>
+    <state x="1956" y="10" width="1310" height="874" key="dock-window-2/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1606209102855" />
     <state x="2129" y="4" width="1025" height="814" key="dock-window-3" timestamp="1605028383949">
       <screen x="1920" y="0" width="1366" height="728" />
     </state>

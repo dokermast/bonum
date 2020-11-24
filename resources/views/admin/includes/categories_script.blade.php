@@ -1,6 +1,8 @@
 
 <script type="text/javascript">
 
+    base_url = window.location.origin;
+
     function getCookie(name) {
         var matches = document.cookie.match(new RegExp(
             "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
@@ -18,7 +20,7 @@
 
         $.ajax({
             type: "POST",
-            url: '/public/admin/categories/status',
+            url: base_url + '/admin/categories/status',
             data: {
                 id: id,
                 status: status

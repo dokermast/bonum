@@ -53,8 +53,7 @@ Route::group(['middleware' => ['auth', 'admin']], function(){
             Route::post('/store', [AdminPostController::class, 'store'])->name('admin.post.store');
             Route::post('/update/{post}', [AdminPostController::class, 'update'])->name('admin.post.update');
             Route::post('/destroy/{post}', [AdminPostController::class, 'destroy'])->name('admin.post.destroy');
-            Route::post('/on', [AdminPostController::class, 'postOn']);
-            Route::post('/off', [AdminPostController::class, 'postOff']);
+            Route::post('/status', [AdminPostController::class, 'postStatus']);
         });
 
         Route::group(['prefix' => 'categories'], function () {

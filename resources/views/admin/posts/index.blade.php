@@ -39,11 +39,11 @@
                                         <td>{{ $item->content }}</td>
                                         <td>
                                             @if($item->status == 0)
-                                                <a id="off_{{$item->id}}" style="" class="btn btn-secondary btn-sm" onclick="postOn({{$item->id}})">Off</a>
-                                                <a id="on_{{$item->id}}" style="display: none" class="btn btn-success btn-sm" onclick="postOff({{$item->id}})">On</a>
+                                                <a id="off_{{$item->id}}" style="" class="btn btn-secondary btn-sm" onclick="postStatus({{$item->id}}, 1)">Off</a>
+                                                <a id="on_{{$item->id}}" style="display: none" class="btn btn-success btn-sm" onclick="postStatus({{$item->id}}, 0)">On</a>
                                             @else
-                                                <a id="on_{{$item->id}}" style="" class="btn btn-success btn-sm" onclick="postOff({{$item->id}})">On</a>
-                                                <a id="off_{{$item->id}}" style="display: none" class="btn btn-secondary btn-sm" onclick="postOn({{$item->id}})">Off</a>
+                                                <a id="on_{{$item->id}}" style="" class="btn btn-success btn-sm" onclick="postStatus({{$item->id}}, 0)">On</a>
+                                                <a id="off_{{$item->id}}" style="display: none" class="btn btn-secondary btn-sm" onclick="postStatus({{$item->id}}, 1)">Off</a>
                                             @endif
                                         </td>
                                         <td>{{ $item->removed }}</td>

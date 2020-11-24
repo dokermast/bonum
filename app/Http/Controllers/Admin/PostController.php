@@ -61,15 +61,9 @@ class PostController extends Controller
     }
 
 
-    public function postOn(Request $request)
+    public function postStatus(Request $request)
     {
-        Post::find($request->id)->update(['status' => true]);
-    }
-
-
-    public function postOff(Request $request)
-    {
-        Post::find($request->id)->update(['status' => false]);
+        Post::find($request->id)->update(['status' => $request->status]);
     }
 
 
